@@ -9,13 +9,71 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.sass">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/d3js/5.7.0/d3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="" async defer></script>
+        <header>
+            <div class="header-text">
+                <h1>I'm Ber<span>t</span>aev Turpal</h1>
+                <p>Fronted Developer</p><br>
+                <a href="#about">Hire Me</a>
+            </div>
+        </header>
+        <nav>
+                <ul class="menu">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="http://">Education</a></li>
+                    <li><a href="http://">Skill</a></li>
+                    <li><a href="http://">Portfolio</a></li>
+                    <li><a href="http://">Contact</a></li>
+                </ul>
+            </nav>
+        <main>
+            <section id="about">
+            </section>
+            <section id="education"></section>
+            <section id="skill"></section>
+            <section id="portfoilio"></section>
+            <section id="contact"></section>
+        </main>
+        <footer>
+            <div class="footer-text">
+                <h2>+7-989-932-61-79</h2>
+                <p>24/ Elsaeva Street, Urus-Martan <br>Chechenya - 10000</p>
+            </div>
+            <div class="social">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-vk"></i></a>
+                <a href=""><i class="fab fa-github"></i></a>
+            </div>
+            <div class="rights">
+                <span>All Right Reserved@ Bertaev Turpal 2019</span>
+            </div>
+        </footer>
+        <script src="libs/jquery-3.3.1.min.js" async defer></script>
+        <script>
+            $(function(){
+              $('a[href^="#"]').on('click', function(event) {
+                // отменяем стандартное действие
+                event.preventDefault();
+                
+                var sc = $(this).attr("href"),
+                    dn = $(sc).offset().top;
+                /*
+                * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+                * dn - определяем положение блока на странице
+                */
+                
+                $('html, body').animate({scrollTop: dn}, 1000);
+                
+                /*
+                * 1000 скорость перехода в миллисекундах
+                */
+              });
+            });
+        </script>
     </body>
 </html>
