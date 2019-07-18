@@ -26,17 +26,37 @@
                     <li><a href="#about">About Me</a></li>
                     <li><a href="http://">Education</a></li>
                     <li><a href="http://">Skill</a></li>
-                    <li><a href="http://">Portfolio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="http://">Contact</a></li>
                 </ul>
             </nav>
         <main>
             <section id="about">
             </section>
-            <section id="education"></section>
-            <section id="skill"></section>
-            <section id="portfoilio"></section>
-            <section id="contact"></section>
+            <section id="education">
+                <div class="title">
+                    <h1>Education</h1>
+                </div>
+            </section>
+            <section id="skill">
+                <div class="title">
+                    <h1>Skills</h1>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class="title">
+                    <h1>Portfolio</h1>
+                </div>
+                <div class="works">
+                    <div class="work-item item1"><a target="_blank" href="https://tbertaev.github.io/golden-page "></a></div>
+                    <div class="work-item item2"><a href="https://tbertaev.github.io/mycompany.github.io"></a></div>
+                    <div class="work-item item3"><a href="https://tbertaev.github.io/lemon.github.io/"></a></div>
+                    <div class="work-item item4"><a href="http://"></a></div>
+                    <div class="work-item item5"><a href="http://"></a></div>
+                </div>
+            </section>
+            <section id="contact">
+            </section>
         </main>
         <footer>
             <div class="footer-text">
@@ -53,27 +73,6 @@
                 <span>All Right Reserved@ Bertaev Turpal 2019</span>
             </div>
         </footer>
-        <script src="libs/jquery-3.3.1.min.js" async defer></script>
-        <script>
-            $(function(){
-              $('a[href^="#"]').on('click', function(event) {
-                // отменяем стандартное действие
-                event.preventDefault();
-                
-                var sc = $(this).attr("href"),
-                    dn = $(sc).offset().top;
-                /*
-                * sc - в переменную заносим информацию о том, к какому блоку надо перейти
-                * dn - определяем положение блока на странице
-                */
-                
-                $('html, body').animate({scrollTop: dn}, 1000);
-                
-                /*
-                * 1000 скорость перехода в миллисекундах
-                */
-              });
-            });
-        </script>
+        <script src="libs/jquery-3.3.1.min.js"></script>
     </body>
 </html>
