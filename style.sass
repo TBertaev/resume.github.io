@@ -134,10 +134,88 @@ main
                 a
                  background-image: url('../img/portfolio/landx.png')
                  width: 500px
-                 height: 600px
-                 
-            
-        
+                 height: 600px  
+    #contact
+        display: flex
+        width: 100%
+        background-color: #f8f9fb
+        .contact
+            display: flex
+            flex-direction: column
+            font-family: 'Lato'
+            align-items: center
+            margin-bottom: 150px
+            width: 100%
+            padding: 0 50px
+            .contact-container
+                display: flex
+                justify-content: space-around
+                width: 100%
+            .contact-form
+                max-width: 100%
+                display: flex
+                flex-direction: column
+                h2
+                    color: #4a4a4a
+                    font-size: 24px
+                    line-height: 24px
+                    margin-bottom: 45px
+                form
+                    display: flex
+                    flex-direction: column
+                    width: 100%
+                    input
+                        padding: 25px 15px
+                        font-family: 'Lato'
+                        font-size: 15px
+                        color: #aaaaaa
+                        width: 570px
+                        line-height: 24px
+                        margin-bottom: 20px
+                        border: 1px solid #d5d5d5
+                        border-radius: 5px
+                    input:focus,
+                    textarea:focus
+                        outline: none
+                    textarea
+                        padding: 25px 15px
+                        font-family: 'Lato'
+                        font-size: 15px
+                        color: #aaaaaa
+                        max-width: 570px
+                        line-height: 24px
+                        margin-bottom: 20px
+                        border: 1px solid #d5d5d5
+                        border-radius: 5px
+                        resize: none
+                    input[type='submit']
+                        background-color: #0e82f9
+                        font-size: 24px
+                        line-height: 24px
+                        border: none
+                        padding: 20px 45px
+                        width: 140px
+                        color: #ffffff
+                        cursor: pointer
+            .contact-adress
+                max-width: 500px
+                color: #4a4a4a
+                h2
+                    font-size: 24px
+                    line-height: 24px
+                    margin-bottom: 65px
+                .addres-list
+                    i
+                        margin-right: 25px
+                        transform: scale(-1,1)
+                        font-size: 24px
+                    li
+                        line-height: 24px
+                        margin-bottom: 35px
+                        display: flex
+                .map
+                    margin-top: 20px
+                        
 footer
     background-color: #26272f
     color: #ffffff
@@ -146,6 +224,7 @@ footer
     justify-content: center
     align-items: center
     text-align: center
+    font-family: 'Lato'
     .footer-text
         display: block
         h2
@@ -155,9 +234,30 @@ footer
             padding-bottom: 15px
         p
             padding-bottom: 38px
+            color: #8b8c90
     .social
         display: flex
+        margin-bottom: 30px
+        justify-content: space-between
+        align-items: center
         a
-            margin: 0 4px
+            margin: 0 8px
+            color: #ffffff
+            font-size: 16px
+            padding: 10px
+            border-radius: 50%
+        .facebook
+            background-color: #3b5998
+            padding: 10px 15px
+        .twitter
+            background-color: #1da1f2
+        .vk
+            background-color: #597da3
+        .github
+            background-color: #000000
+            
     .rights
-        padding-bottom: 30px
+        padding: 30px 0
+        line-height: 24px
+    hr
+        width: 70%

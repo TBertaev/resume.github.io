@@ -24,10 +24,10 @@
         <nav>
                 <ul class="menu">
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="http://">Education</a></li>
-                    <li><a href="http://">Skill</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skill">Skill</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="http://">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         <main>
@@ -56,6 +56,41 @@
                 </div>
             </section>
             <section id="contact">
+                <div class="contact">
+                    <div class="title">
+                        <h1>Get in Touch</h1>
+                    </div>
+                    <div class="contact-container">
+                        <div class="contact-form">
+                            <h2>Hire Me</h2>
+                            <div class="form-container">
+                                <div class="note"></div>
+                                <div class="fields">
+                                    <form class="ajax-contact-form" action="">
+                                        <p><input type="text" name="name" value="" placeholder="Your Name"></p>
+                                        <div class="row">
+                                            <div class="col"><input type="topics" name="topics" value="" placeholder="Your Topics"></div>
+                                            <div class="col"><input type="email" name="email" value="" placeholder="Your E-mail"></div>
+                                        </div>
+                                        <textarea name="message" cols="40" rows="3" placeholder="Message"></textarea>
+                                        <input type="submit" name="submit" class="form-container__btn" value="Send">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-adress">
+                            <h2>Address</h2>
+                            <ul class="addres-list">
+                                <li><i class="fas fa-home"></i><span>69/A, Kit Street, NewYourk <br>NewYork 1000</span></li>
+                                <li><i class="fas fa-envelope"></i>bertaevwf@gmail.com</li>
+                                <li><i class="fas fa-phone"></i>+7-989-932-61-79</li>
+                            </ul>
+                            <div class="map">
+                                <img src="img/map.png" width="400px" alt="map">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
@@ -64,15 +99,17 @@
                 <p>24/ Elsaeva Street, Urus-Martan <br>Chechenya - 10000</p>
             </div>
             <div class="social">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
-                <a href=""><i class="fab fa-vk"></i></a>
-                <a href=""><i class="fab fa-github"></i></a>
+                <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="" class="vk"><i class="fab fa-vk"></i></a>
+                <a href="" class="github"><i class="fab fa-github"></i></a>
             </div>
+            <hr>
             <div class="rights">
                 <span>All Right Reserved@ Bertaev Turpal 2019</span>
             </div>
         </footer>
         <script src="libs/jquery-3.3.1.min.js"></script>
+        <script src="contactform.js"></script>
     </body>
 </html>
