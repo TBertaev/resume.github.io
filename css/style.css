@@ -56,6 +56,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 nav .menu {
@@ -77,6 +78,7 @@ nav .menu li a {
   padding-bottom: 15px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
 }
 
 nav .menu li a:hover {
@@ -111,6 +113,220 @@ main .title h1 {
   line-height: 24px;
   text-transform: uppercase;
   color: #232323;
+}
+
+main #skills {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Lato';
+}
+
+main #skills .skill-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+main #skills .skill-container .skills {
+  background-color: #0e82f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px 0 95px 50px;
+  height: 450px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #ffffff;
+}
+
+main #skills .skill-container .skills h2 {
+  font-size: 26px;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+main #skills .skill-container .skills h2 i {
+  margin-right: 15px;
+  font-size: 26px;
+  line-height: 24px;
+}
+
+main #skills .skill-container .skills .skill {
+  margin-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 14px;
+}
+
+main #skills .skill-container .skills .skill .skill-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #skills .skill-container .skills .skill .skill-item span {
+  margin-bottom: 15px;
+}
+
+main #skills .skill-container .skills .skill .skill-item .load {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #skills .skill-container .skills .skill .skill-item p {
+  width: 240px;
+  height: 6px;
+  background-color: #414042;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #skills .skill-container .skills .skill .skill-item p:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  width: 50%;
+  height: 6px;
+}
+
+main #skills .skill-container .skills .skill .skill-item p i {
+  width: 12px;
+  background-color: #ffffff;
+  height: 12px;
+  margin-left: 14%;
+  border-radius: 50%;
+  position: relative;
+}
+
+main #skills .skill-container .skills .skill .skill-item p i:before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border: 1px solid #ffffff;
+  width: 14px;
+  height: 14px;
+  padding: 1px;
+  border-radius: 50%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .html p:before {
+  width: 90%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .html i {
+  margin-left: 89%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .css p:before {
+  width: 80%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .css i {
+  margin-left: 79%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .js p:before {
+  width: 40%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .js i {
+  margin-left: 39%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .react p:before {
+  width: 25%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .react i {
+  margin-left: 24%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .angular p:before {
+  width: 15%;
+}
+
+main #skills .skill-container .skills .skill .skill-item .vue p:before {
+  width: 15%;
+}
+
+main #skills .skill-container .lang-skill .lang {
+  background-color: #e9e9e9;
+  width: 260px;
+  height: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #skills .skill-container .lang-skill .lang:nth-child(2) {
+  margin: 10px 0;
+}
+
+main #skills .skill-container .lang-skill .lang h2 {
+  color: #4a4a4a;
+  font-size: 26px;
+  line-height: 24px;
+}
+
+main #skills .skill-container .lang-skill .lang i {
+  color: #0e82f9;
 }
 
 main #portfolio {
