@@ -132,57 +132,61 @@ main #education {
 }
 
 main #education .education-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 670px;
   margin-bottom: 150px;
-}
-
-main #education .education-container .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 220px;
-  height: 569px;
-  background-color: #e2e2e2;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow: hidden;
 }
 
 main #education .education-container .education-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 550px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1100px;
+  border: 1px solid #eeeeee;
+}
+
+main #education .education-container .education-text:nth-child(2) {
+  margin: 30px 0;
+  overflow: hidden;
+}
+
+main #education .education-container .education-text > span {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background-color: #0e82f9;
+  width: 74%;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 main #education .education-container .education-text .text {
-  border: 1px solid #ececec;
   padding: 50px 50px 70px 50px;
-  position: relative;
-  height: 260px;
-}
-
-main #education .education-container .education-text .text:nth-child(2) {
-  margin: 30px 0;
-  text-align: right;
 }
 
 main #education .education-container .education-text .text h2 {
@@ -201,29 +205,6 @@ main #education .education-container .education-text .text p {
   font-size: 14px;
   color: #919191;
   margin-top: 30px;
-}
-
-main #education .education-container .education-text .one:before {
-  content: '2011 - 2012';
-  position: absolute;
-  top: 30%;
-  left: -20%;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  background-color: #0e82f9;
-  width: 257px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #ffffff;
-  font-size: 20px;
 }
 
 main #skills {
