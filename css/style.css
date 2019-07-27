@@ -227,12 +227,14 @@ main #skills .skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
+  padding-bottom: 150px;
 }
 
 main #skills .skill-container .skills {
@@ -261,7 +263,7 @@ main #skills .skill-container .skills h2 i {
 }
 
 main #skills .skill-container .skills .skill {
-  margin-right: 50px;
+  margin-right: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
