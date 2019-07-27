@@ -136,7 +136,7 @@ main #education .education-container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -158,7 +158,6 @@ main #education .education-container .education-text {
       -ms-flex-align: center;
           align-items: center;
   width: 1100px;
-  border: 1px solid #eeeeee;
 }
 
 main #education .education-container .education-text:nth-child(2) {
@@ -183,6 +182,27 @@ main #education .education-container .education-text > span {
           justify-content: center;
   color: #ffffff;
   font-size: 20px;
+  position: relative;
+}
+
+main #education .education-container .education-text .one::after {
+  content: '';
+  position: absolute;
+  bottom: -19px;
+  right: 30px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #0e82f9;
+}
+
+main #education .education-container .education-text .two::after {
+  content: '';
+  position: absolute;
+  top: -19px;
+  right: 30px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #0e82f9;
 }
 
 main #education .education-container .education-text .text {

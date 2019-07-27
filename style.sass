@@ -84,7 +84,7 @@ main
         .education-container
             display: flex
             width: 100%
-            margin-bottom: 150px
+            margin-bottom: 50px
             justify-content: center
             flex-direction: column
             align-items: center
@@ -93,7 +93,6 @@ main
                 display: flex
                 align-items: center
                 width: 1100px
-                border: 1px solid #eeeeee
                 &:nth-child(2)
                     margin: 30px 0
                     overflow: hidden
@@ -106,7 +105,26 @@ main
                     align-items: center
                     justify-content: center
                     color: #ffffff
-                    font-size: 20px   
+                    font-size: 20px  
+                    position: relative
+                .one
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: -19px
+                        right: 30px
+                        border-left: 10px solid transparent
+                        border-right: 10px solid transparent
+                        border-top: 20px solid #0e82f9
+                .two
+                    &::after
+                        content: ''
+                        position: absolute
+                        top: -19px
+                        right: 30px
+                        border-left: 10px solid transparent
+                        border-right: 10px solid transparent
+                        border-bottom: 20px solid #0e82f9
                 .text
                     padding: 50px 50px 70px 50px
                     h2
