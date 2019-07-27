@@ -128,7 +128,6 @@ main #education {
           align-items: center;
   width: 100%;
   font-family: 'Lato';
-  padding-bottom: 150px;
 }
 
 main #education .education-container {
@@ -531,7 +530,7 @@ main #portfolio .works .item3 {
 }
 
 main #portfolio .works .item3 a {
-  background-image: url("../img/portfolio/lemon.png");
+  background-image: url("../img/portfolio/Lemon.png");
   width: 500px;
   height: 600px;
 }
@@ -546,7 +545,7 @@ main #portfolio .works .item4 {
 }
 
 main #portfolio .works .item4 a {
-  background-image: url("../img/portfolio/waxom.png");
+  background-image: url("../img/portfolio/Waxom.png");
   width: 500px;
   height: 600px;
 }
