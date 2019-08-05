@@ -16,6 +16,7 @@ header {
   background-repeat: no-repeat;
   color: #fff;
   position: relative;
+  height: 100vh;
 }
 
 .header-text {
@@ -56,33 +57,55 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 9999;
+  z-index: 3;
 }
 
 nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 13%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .menu li {
-  display: block;
-  margin: 25px 7px;
-  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .menu li a {
   text-decoration: none;
   color: #ffffff;
-  padding-bottom: 15px;
+  width: 150px;
+  height: 50px;
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 nav .menu li a:hover {
-  border-bottom: 1px solid #ffffff;
+  color: #0e82f9;
+  background-color: #ffffff;
 }
 
 main {
@@ -118,6 +141,7 @@ main .title h1 {
 main #about {
   background-color: #f8f9fb;
   width: 100%;
+  padding-top: 110px;
   padding-bottom: 150px;
 }
 
@@ -130,13 +154,103 @@ main #about .about-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main #about .about-container .about-text {
-  -webkit-box-shadow: 2px 2px 3px 2px #f8f9fb;
-          box-shadow: 2px 2px 3px 2px #f8f9fb;
-  background-color: #ffffff;
   margin-bottom: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #about .about-container .about-text .picture {
+  z-index: 2;
+}
+
+main #about .about-container .about-text .name {
+  -webkit-box-shadow: -1px 0px 14px 0px rgba(46, 50, 50, 0.43);
+          box-shadow: -1px 0px 14px 0px rgba(46, 50, 50, 0.43);
+  background-color: #ffffff;
+  margin-top: 230px;
+  margin-bottom: 30px;
+  margin-left: -30px;
+  padding: 55px 0 60px 50px;
+  width: 720px;
+  height: 160px;
+}
+
+main #about .about-container .about-text .name h1 {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+main #about .about-container .about-text .name p {
+  font-family: "Lato";
+  font-size: 22px;
+  line-height: 24px;
+  color: #282828;
+}
+
+main #about .about-container .about-text .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 35px;
+}
+
+main #about .about-container .about-text .social span {
+  color: #c2c2c2;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  margin-right: 30px;
+}
+
+main #about .about-container .about-text .social a {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 6px;
+  background-color: #666666;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+main #about .about-container .about-text .social a .fa-vk {
+  background-color: #597da3;
+  padding: 10px;
+}
+
+main #about .about-container .about-text .social a .fa-twitter {
+  background-color: #1da1f2;
+  padding: 10px;
+}
+
+main #about .about-container .about-text .social a .fa-facebook-f {
+  background-color: #3b5998;
+  padding: 10px;
 }
 
 main #about .about-container .biograph {
@@ -164,6 +278,13 @@ main #about .about-container .biograph .table .list li {
   font-size: 18px;
   line-height: 28px;
   color: #4a4a4a;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main #about .about-container .biograph .table .list li span {
@@ -176,6 +297,7 @@ main #about .about-container .biograph .biograph-text h1 {
   font-size: 35px;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 65px;
+  text-align: center;
 }
 
 main #about .about-container .biograph .biograph-text p {
@@ -225,6 +347,9 @@ main #education .education-container .education-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 1100px;
 }
 
@@ -274,7 +399,7 @@ main #education .education-container .education-text .two::after {
 }
 
 main #education .education-container .education-text .text {
-  padding: 50px 50px 70px 50px;
+  padding: 50px 50px 70px 10px;
 }
 
 main #education .education-container .education-text .text h2 {
