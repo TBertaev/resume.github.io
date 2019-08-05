@@ -257,9 +257,9 @@ main #about .about-container .biograph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 30px;
 }
 
 main #about .about-container .biograph .table {
