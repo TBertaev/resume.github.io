@@ -1,8 +1,6 @@
 (function($){
 
-	/* ---------------------------------------------- /*
-	 * Preloader
-	/* ---------------------------------------------- */
+ 
 
 	$(window).load(function() {
 		$('#status').fadeOut();
@@ -11,10 +9,7 @@
 
 	$(document).ready(function() {
 
-		/* ---------------------------------------------- /*
-		 * Smooth scroll / Scroll To Top
-		/* ---------------------------------------------- */
-
+	 
 		$('a[href*=#]').bind("click", function(e){
            
 			var anchor = $(this);
